@@ -4,9 +4,73 @@
     <meta charset="UTF-8">
     <title>learning html+css :)</title>
     <link rel="stylesheet" href="style.css">
+    
+    
+
 </head>
 <body>
-    <h1>Hello World</h1>
-    <h1 id="blueline">blue line</h1>
+  
+  
+<div id="maindiv">
+   
+    <div class="leftblock">
+        <h1 class="asd">Тестовый сайт</h1>
+    </div>
+    
+    <div class="centreblock" type="button" id="submit">
+        <details>
+        <summary class="blueline" id="button">do NOT press the line</summary>
+        <p class="blueline">Never gonna give you up</p>
+        <p class="blueline">Never gonna let you down</p>
+        <img id="rickface" src="rickroll-roll.gif">
+        </details>
+    </div>
+    
+    <div id="rightblock">
+        <p id="links">github: 
+            <a id="links" href="https://github.com/Nattskrett">github.com/Nattskrett</a>
+        </p>
+        <p id="links">telegram: <a id="links" href="https://t.me/abtntt">nattskrett</a>
+        </p>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script language="JavaScript">
+        
+            var btn = document.getElementById("button");
+            var isPlaying=false;
+            var audio = new Audio(); // Создаём новый элемент Audio
+            function colorFunction() {
+
+            if (isPlaying==false){
+                audio.src = 'music.mp3'; // Указываем путь к звуку "клика"
+                audio.autoplay = true; // Автоматически запускаем
+                isPlaying=true;
+
+            
+            }else{
+                audio.pause();
+                isPlaying=false;
+            };
+            
+                };
+    
+
+            btn.onclick = colorFunction;
+            
+
+</script>
+</div>
 </body>
 </html>
